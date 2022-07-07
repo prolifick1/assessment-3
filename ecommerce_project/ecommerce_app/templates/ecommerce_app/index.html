@@ -1,0 +1,26 @@
+{% extends "ecommerce_app/layout.html" %}
+
+{% load static %}
+{% block header %}
+<marquee direction="left">top content</marquee> 
+{% endblock header %}
+{% block main %}
+<h1>main content</h1>
+  <img src="{% static '/media/alpha_brain.png' %}" />
+  <img src="{% static '/media/doritos.png' %}" />
+  <img src="{% static '/media/carpal_tunnel.png' %}" />
+  <img src="{% static '/media/cheap_coffee.png' %}" />
+  <img src="{% static '/media/coconut_oil.png' %}" />
+  <img src="{% static '/media/giant-rubber-duck_400x.jpg' %}" />
+  <img src="{% static '/media/hacker_hoodie.png' %}" />
+  <img src="{% static '/media/mountain_dew.png' %}" />
+  <img src="{% static '/media/new_balance_sneakers.png' %}" />
+  <img src="{% static '/media/noise_canceling_headphones.png' %}" />
+  <img src="{% static '/media/soylent.png' %}" />
+  <img src="{% static '/media/worlds_largest_coffee_mug.png' %}" />
+{% endblock main %}
+
+{% include "ecommerce_app/footer.html" %}
+{% block footer %}
+<marquee behavior="" direction="right">bottom content</marquee>
+{% endblock footer %}

@@ -1,0 +1,108 @@
+{% extends "ecommerce_app/layout.html" %}
+{% load static %}
+
+{% block header %}
+cat 1 header
+{% endblock header %}
+
+{# todo: add dropdown text update #}
+
+{% block main %}
+<ul class="list-group list-group items-list">
+  <div class="d-flex flex-row">
+    <li class="list-group-item p-2">
+        <img src="{% static 'media/cheap_coffee.png' %}" /> 
+    </li>
+    <div class="d-flex flex-column p-5 flex-fill item-info">
+      <h2>Folgiers Coffee</h2>
+      <h1 class='item-price'>$4.99</h1>
+      <p>Give you energy, but be careful not to drink too much</p>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Qty: 1
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">1</a>
+          <a class="dropdown-item" href="#">2</a>
+          <a class="dropdown-item" href="#">3</a>
+          <a class="dropdown-item" href="#">4</a>
+          <a class="dropdown-item" href="#">5</a>
+          <a class="dropdown-item" href="#">6</a>
+          <a class="dropdown-item" href="#">7</a>
+          <a class="dropdown-item" href="#">8</a>
+          <a class="dropdown-item" href="#">9</a>
+        </div>
+      </div>      
+    </div>
+    <button class="ml-auto btn btn-warning p-2 btn-cart">
+      Add to Cart
+    </button>
+  </div>
+  <div class="d-flex flex-row">
+    <li class="list-group-item p-2">
+        <img src="{% static 'media/doritos.png' %}" /> 
+    </li>
+    <div class="d-flex flex-column p-5 flex-fill item-info">
+      <h2>Doritos</h2>
+      <h1 class="item-price">$2.99</h1>
+      <p>A coder's favorite</p> 
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Qty: 1
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">1</a>
+          <a class="dropdown-item" href="#">2</a>
+          <a class="dropdown-item" href="#">3</a>
+          <a class="dropdown-item" href="#">4</a>
+          <a class="dropdown-item" href="#">5</a>
+          <a class="dropdown-item" href="#">6</a>
+          <a class="dropdown-item" href="#">7</a>
+          <a class="dropdown-item" href="#">8</a>
+          <a class="dropdown-item" href="#">9</a>
+        </div>
+      </div>      
+    </div>
+    <button class="ml-auto p-2 btn btn-warning btn-cart">
+      Add to Cart
+    </button>
+  </div>
+  <div class="d-flex flex-row">
+    <li class="list-group-item p-2">
+        <img src="{% static 'media/mountain_dew.png' %}" /> 
+    </li>
+    <div class="d-flex flex-column p-5 flex-fill item-info">
+      <h2>Mountain Dew</h2>
+      <h1 class='item-price'>$10.99</h1>
+      <p>The nectar of the Gods</p>
+
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Qty: 1
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">1</a>
+          <a class="dropdown-item" href="#">2</a>
+          <a class="dropdown-item" href="#">3</a>
+          <a class="dropdown-item" href="#">4</a>
+          <a class="dropdown-item" href="#">5</a>
+          <a class="dropdown-item" href="#">6</a>
+          <a class="dropdown-item" href="#">7</a>
+          <a class="dropdown-item" href="#">8</a>
+          <a class="dropdown-item" href="#">9</a>
+        </div>
+      </div>      
+    </div>
+    <button class="ml-auto p-2 btn btn-warning btn-cart">
+      Add to Cart
+    </button>
+  </div>
+</ul>
+<h1>main content</h1>
+{% endblock main %}
+
+{% block footer %}
+cat1 footer
+{% endblock footer %}
+

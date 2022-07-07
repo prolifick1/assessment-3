@@ -1,0 +1,19 @@
+/* TODOS: 
+ * ensure classes are used to reduce repeated styles  
+ * write CSS selectors with minimal specificity
+ * proper use of bootstrap navbar
+ * Use of other bootstrap component: Carousel, dropdown, modal, etc
+ * Styled to navigate at all screen sizes
+ * */
+
+body {
+  color: #2a2a2a;
+  background-color: eggshell; 
+  font-family: 'SF Pro Display';
+}
+
+.dropdown-toggle {
+  border-radius: 7px;
+  background: #F0F2F2;
+  box-shadow: 0 2px 5px rgba(15,17,17,.15);
+}
